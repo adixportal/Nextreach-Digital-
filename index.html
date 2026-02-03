@@ -1,112 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NextReach Digital | Reach More. Grow Faster.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NextReach Digital | Reach More. Grow Faster.</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-    body{background:#fff;color:#1a1a1a}
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#fff;color:#1a1a1a}
 
-    header{
-      display:flex;align-items:center;
-      padding:14px 20px;border-bottom:1px solid #eee
-    }
-    .brand{display:flex;align-items:center;gap:10px}
-    .brand img{height:46px}
-    .brand h1{font-size:20px;color:#0b2c4a;font-weight:700}
+/* HEADER */
+header{
+  display:flex;align-items:center;
+  padding:14px 20px;border-bottom:1px solid #eee
+}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{height:46px}
+.brand h1{font-size:20px;color:#0b2c4a;font-weight:700}
 
-    .hero{
-      text-align:center;padding:90px 20px;
-      background:linear-gradient(180deg,#f4f9ff,#fff)
-    }
-    .hero h2{font-size:38px;color:#0b2c4a}
-    .hero p{max-width:650px;margin:18px auto 25px}
-    .btn{
-      padding:14px 34px;background:#0b2c4a;
-      color:#fff;text-decoration:none;border-radius:30px
-    }
+/* HERO */
+.hero{
+  text-align:center;padding:90px 20px;
+  background:linear-gradient(180deg,#f4f9ff,#fff)
+}
+.hero h2{font-size:38px;color:#0b2c4a}
+.hero p{max-width:650px;margin:18px auto 25px}
+.btn{
+  padding:14px 34px;background:#0b2c4a;
+  color:#fff;text-decoration:none;border-radius:30px;
+  display:inline-block;font-weight:500
+}
 
-    section{padding:70px 20px}
-    .section-title{text-align:center;margin-bottom:45px}
-    .section-title h3{font-size:30px;color:#0b2c4a}
+/* SECTION */
+section{padding:80px 20px}
+.section-title{text-align:center;margin-bottom:50px}
+.section-title h3{font-size:32px;color:#0b2c4a}
 
-    /* SERVICES */
-    .services{
-      display:grid;gap:28px;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      max-width:1100px;margin:auto
-    }
-    .service-box{
-      padding:32px;border-radius:18px;
-      border:1px solid #eef2f7;
-      position:relative;transition:.3s
-    }
-    .service-box::before{
-      content:"";height:4px;width:100%;
-      background:linear-gradient(90deg,#0b2c4a,#5db7e5);
-      position:absolute;top:0;left:0
-    }
-    .service-box:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(11,44,74,.12)}
-    .service-icon{font-size:30px;margin-bottom:12px}
-    .service-box h4{color:#0b2c4a}
+/* SERVICES */
+.services{
+  display:grid;gap:28px;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  max-width:1100px;margin:auto
+}
+.service-box{
+  padding:32px;border-radius:18px;
+  border:1px solid #eef2f7;
+  position:relative;transition:.35s;
+  background:#fff
+}
+.service-box::before{
+  content:"";height:4px;width:100%;
+  background:linear-gradient(90deg,#0b2c4a,#5db7e5);
+  position:absolute;top:0;left:0
+}
+.service-box:hover{
+  transform:translateY(-8px);
+  box-shadow:0 18px 40px rgba(11,44,74,.12)
+}
+.service-icon{font-size:30px;margin-bottom:12px}
+.service-box h4{color:#0b2c4a}
 
-    /* PRICING */
-    .pricing{
-      display:grid;gap:25px;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      max-width:1000px;margin:auto
-    }
-    .price-card{
-      border-radius:20px;
-      border:1px solid #e6ecf3;
-      padding:35px;text-align:center
-    }
-    .price-card h4{color:#0b2c4a;font-size:22px}
-    .price{font-size:32px;margin:15px 0;font-weight:700}
-    .price-card ul{list-style:none;margin:20px 0}
-    .price-card li{margin:8px 0;color:#555}
-    .price-card a{display:inline-block;margin-top:15px}
-    .featured{background:#f4f9ff;transform:scale(1.03)}
+/* 🔥 PREMIUM PRICING */
+.pricing{
+  display:grid;gap:30px;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  max-width:1100px;margin:auto
+}
 
-    /* TESTIMONIALS */
-    .testimonials{
-      display:grid;gap:25px;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      max-width:1000px;margin:auto
-    }
-    .testimonial{
-      background:#fff;border-radius:18px;
-      padding:30px;border:1px solid #eef2f7
-    }
-    .testimonial p{font-size:15px;color:#444}
-    .client{margin-top:15px;font-weight:600;color:#0b2c4a}
+.price-card{
+  background:rgba(255,255,255,0.9);
+  backdrop-filter:blur(8px);
+  border-radius:22px;
+  padding:40px 30px;
+  text-align:center;
+  border:1px solid #e7eef6;
+  transition:0.4s;
+  position:relative
+}
 
-    /* CONTACT */
-    .contact{
-      background:#0b2c4a;color:#fff;
-      text-align:center;padding:70px 20px
-    }
+.price-card:hover{
+  transform:translateY(-12px) scale(1.02);
+  box-shadow:0 25px 60px rgba(11,44,74,0.18)
+}
 
-    footer{
-      background:#081f35;color:#ccc;
-      text-align:center;padding:14px;font-size:14px
-    }
+.price-card h4{
+  font-size:22px;
+  color:#0b2c4a;
+  margin-bottom:10px
+}
 
-    /* WHATSAPP */
-    .whatsapp-btn{
-      position:fixed;bottom:80px;right:20px;
-      width:55px;height:55px;background:#25D366;
-      border-radius:50%;display:flex;
-      align-items:center;justify-content:center;
-      box-shadow:0 6px 15px rgba(0,0,0,.25)
-    }
-    .whatsapp-btn img{width:28px}
+.price{
+  font-size:38px;
+  font-weight:700;
+  color:#0b2c4a;
+  margin:15px 0
+}
 
-  </style>
+.price span{
+  font-size:16px;
+  color:#555;
+  font-weight:400
+}
+
+.price-card ul{
+  list-style:none;
+  margin:25px 0
+}
+.price-card li{
+  margin:10px 0;
+  color:#444;
+  font-size:15px
+}
+
+/* MOST POPULAR */
+.featured{
+  background:linear-gradient(180deg,#0b2c4a,#123a63);
+  color:#fff;
+  transform:scale(1.05)
+}
+.featured h4,
+.featured .price,
+.featured li{color:#fff}
+.featured .btn{
+  background:#fff;
+  color:#0b2c4a
+}
+.badge{
+  position:absolute;
+  top:-14px;left:50%;
+  transform:translateX(-50%);
+  background:#ffcc00;
+  color:#000;
+  padding:6px 16px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:600
+}
+
+/* TESTIMONIALS */
+.testimonials{
+  display:grid;gap:25px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  max-width:1000px;margin:auto
+}
+.testimonial{
+  background:#fff;border-radius:18px;
+  padding:30px;border:1px solid #eef2f7
+}
+.testimonial p{font-size:15px;color:#444}
+.client{margin-top:14px;font-weight:600;color:#0b2c4a}
+
+/* CONTACT */
+.contact{
+  background:#0b2c4a;color:#fff;
+  text-align:center;padding:70px 20px
+}
+footer{
+  background:#081f35;color:#ccc;
+  text-align:center;padding:14px;font-size:14px
+}
+
+/* WHATSAPP */
+.whatsapp-btn{
+  position:fixed;bottom:80px;right:20px;
+  width:55px;height:55px;background:#25D366;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 15px rgba(0,0,0,.25)
+}
+.whatsapp-btn img{width:28px}
+</style>
 </head>
 <body>
 
@@ -124,49 +189,42 @@
 </div>
 
 <section>
-  <div class="section-title"><h3>Our Services</h3></div>
-  <div class="services">
-    <div class="service-box"><div class="service-icon">📍</div><h4>Google Business Profile</h4><p>Get found on Google Maps & near-me searches.</p></div>
-    <div class="service-box"><div class="service-icon">🌐</div><h4>Business Website</h4><p>Professional mobile-friendly website.</p></div>
-    <div class="service-box"><div class="service-icon">💬</div><h4>WhatsApp Business Setup</h4><p>Auto replies & catalog setup.</p></div>
-    <div class="service-box"><div class="service-icon">📱</div><h4>Instagram Presence</h4><p>Simple posts to build trust.</p></div>
-  </div>
-</section>
-
-<section>
   <div class="section-title"><h3>Pricing</h3></div>
   <div class="pricing">
+
     <div class="price-card">
       <h4>Starter</h4>
       <div class="price">₹3,999</div>
       <ul>
         <li>Google Business Setup</li>
         <li>1-Page Website</li>
-        <li>WhatsApp Setup</li>
+        <li>WhatsApp Business Setup</li>
       </ul>
       <a href="https://wa.me/916367317712" class="btn">Get Started</a>
     </div>
 
     <div class="price-card featured">
+      <div class="badge">MOST POPULAR</div>
       <h4>Growth</h4>
-      <div class="price">₹1,499/mo</div>
+      <div class="price">₹1,499 <span>/month</span></div>
       <ul>
         <li>Monthly Support</li>
         <li>Instagram Posts</li>
         <li>Profile Management</li>
       </ul>
-      <a href="https://wa.me/916367317712" class="btn">Most Popular</a>
+      <a href="https://wa.me/916367317712" class="btn">Choose Plan</a>
     </div>
 
     <div class="price-card">
       <h4>Custom</h4>
-      <div class="price">Contact Us</div>
+      <div class="price">Custom</div>
       <ul>
-        <li>Custom Marketing Plan</li>
-        <li>Business Automation</li>
+        <li>Custom Strategy</li>
+        <li>Automation & Ads</li>
       </ul>
       <a href="https://wa.me/916367317712" class="btn">Talk to Us</a>
     </div>
+
   </div>
 </section>
 
@@ -174,11 +232,11 @@
   <div class="section-title"><h3>What Clients Say</h3></div>
   <div class="testimonials">
     <div class="testimonial">
-      <p>“NextReach Digital helped my shop appear on Google Maps and calls increased within a week.”</p>
+      <p>“My shop started getting calls from Google Maps within a week.”</p>
       <div class="client">— Local Shop Owner</div>
     </div>
     <div class="testimonial">
-      <p>“Very professional service, affordable and fast delivery.”</p>
+      <p>“Very professional and affordable service.”</p>
       <div class="client">— Coaching Center</div>
     </div>
     <div class="testimonial">
