@@ -1,106 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chahat Cafe & Restaurant | Kota</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextReach Digital | Reach More. Grow Faster.</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:#ffffff;
+            color:#1a1a1a;
+        }
+
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:18px 60px;
+            border-bottom:1px solid #eee;
+        }
+
+        .brand{
+            display:flex;
+            align-items:center;
+            gap:12px;
+        }
+
+        .brand img{
+            height:45px;
+        }
+
+        .brand h1{
+            font-size:22px;
+            color:#0b2c4a;
+            font-weight:700;
+        }
+
+        nav a{
+            margin-left:25px;
+            text-decoration:none;
+            color:#333;
+            font-weight:500;
+        }
+
+        .hero{
+            padding:90px 20px;
+            text-align:center;
+            background:linear-gradient(180deg,#f4f9ff,#ffffff);
+        }
+
+        .hero h2{
+            font-size:42px;
+            color:#0b2c4a;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            max-width:650px;
+            margin:0 auto 25px;
+            font-size:18px;
+            line-height:1.6;
+        }
+
+        .btn{
+            padding:14px 34px;
+            background:#0b2c4a;
+            color:white;
+            text-decoration:none;
+            border-radius:30px;
+            font-weight:500;
+            display:inline-block;
+        }
+
+        section{
+            padding:70px 60px;
+        }
+
+        .section-title{
+            text-align:center;
+            margin-bottom:50px;
+        }
+
+        .section-title h3{
+            font-size:32px;
+            color:#0b2c4a;
+        }
+
+        .services{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+        }
+
+        .service-box{
+            padding:28px;
+            border:1px solid #eee;
+            border-radius:14px;
+            transition:0.3s;
+        }
+
+        .service-box:hover{
+            box-shadow:0 10px 25px rgba(0,0,0,0.06);
+        }
+
+        .service-box h4{
+            color:#0b2c4a;
+            margin-bottom:10px;
+        }
+
+        .why-us{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+            text-align:center;
+        }
+
+        .why-box{
+            background:#f5f9ff;
+            padding:22px;
+            border-radius:12px;
+            font-weight:500;
+        }
+
+        .steps{
+            text-align:center;
+        }
+
+        .steps p{
+            font-size:18px;
+            margin:12px 0;
+        }
+
+        .contact{
+            background:#0b2c4a;
+            color:white;
+            text-align:center;
+            padding:80px 20px;
+        }
+
+        .contact h3{
+            margin-bottom:15px;
+            font-size:28px;
+        }
+
+        footer{
+            text-align:center;
+            padding:14px;
+            background:#081f35;
+            color:#ccc;
+            font-size:14px;
+        }
+
+        @media(max-width:768px){
+            header{
+                flex-direction:column;
+            }
+
+            nav{
+                margin-top:10px;
+            }
+
+            .hero h2{
+                font-size:32px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<!-- Floating Buttons -->
-<a href="https://wa.me/919999999999" class="float whatsapp">WhatsApp</a>
-<a href="tel:+919999999999" class="float call">Call</a>
-
-<!-- HERO -->
-<header class="hero">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1>Chahat Cafe & Restaurant</h1>
-    <p>Premium Taste, Cozy Rooftop Vibes</p>
-    <div class="hero-buttons">
-      <a href="#menu">View Menu</a>
-      <a href="#contact">Book a Table</a>
+<header>
+    <div class="brand">
+        <img src="https://i.ibb.co/3yF61z6g/file-00000000b2dc71faa2ba14a172dc87b8.png" alt="NextReach Digital Logo">
+        <h1>NextReach Digital</h1>
     </div>
-  </div>
-  <div class="scroll-indicator"></div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
 </header>
 
-<!-- TRUST -->
-<section class="trust">
-  <div class="trust-card">
-    ⭐ 4.8 Rating <span>99+ Google Reviews</span>
-  </div>
-</section>
-
-<!-- MENU -->
-<section id="menu" class="menu">
-<h2>Our Menu</h2>
-<div class="menu-grid">
-  <div class="menu-card">Coffee</div>
-  <div class="menu-card">Beverages</div>
-  <div class="menu-card">Snacks</div>
-  <div class="menu-card">Main Course</div>
-  <div class="menu-card">Desserts</div>
+<div class="hero">
+    <h2>Reach More. Grow Faster.</h2>
+    <p>
+        We help local businesses get more calls, visits,
+        and real customers using Google and digital platforms.
+    </p>
+    <a href="#" class="btn">Get Free Visibility Audit</a>
 </div>
-<p class="price">₹1 – ₹200 per person</p>
+
+<section>
+    <div class="section-title">
+        <h3>Our Services</h3>
+    </div>
+
+    <div class="services">
+        <div class="service-box">
+            <h4>Google Business Profile</h4>
+            <p>Get found on Google Maps and “near me” searches to increase calls and visits.</p>
+        </div>
+
+        <div class="service-box">
+            <h4>Business Website</h4>
+            <p>Clean, mobile-friendly website that builds trust and credibility.</p>
+        </div>
+
+        <div class="service-box">
+            <h4>WhatsApp Business Setup</h4>
+            <p>Auto replies, catalog and quick customer communication.</p>
+        </div>
+
+        <div class="service-box">
+            <h4>Basic Instagram Presence</h4>
+            <p>Professional profile and simple posts to build local trust.</p>
+        </div>
+    </div>
 </section>
 
-<!-- GALLERY -->
-<section class="gallery">
-<h2>Gallery</h2>
-<div class="gallery-grid">
-  <div class="gallery-item"></div>
-  <div class="gallery-item"></div>
-  <div class="gallery-item"></div>
-  <div class="gallery-item"></div>
+<section>
+    <div class="section-title">
+        <h3>Why Choose NextReach Digital</h3>
+    </div>
+
+    <div class="why-us">
+        <div class="why-box">Local Business Focused</div>
+        <div class="why-box">Affordable Pricing</div>
+        <div class="why-box">Fast Setup (3–5 Days)</div>
+        <div class="why-box">No Long-Term Contracts</div>
+    </div>
+</section>
+
+<section class="steps">
+    <div class="section-title">
+        <h3>How It Works</h3>
+    </div>
+    <p>1️⃣ Free Visibility Audit</p>
+    <p>2️⃣ Setup & Optimization</p>
+    <p>3️⃣ Customers Start Calling</p>
+</section>
+
+<div class="contact">
+    <h3>Let’s Grow Your Business</h3>
+    <p>📞 +91-6367317712</p>
+    <p>📧 sanketsharma.web@gmail.com</p>
+    <p>📍 Serving Your City & Nearby Areas</p>
 </div>
-</section>
 
-<!-- ABOUT -->
-<section class="about">
-<h2>About Us</h2>
-<p>
-At <b>Chahat Cafe & Restaurant</b>, we blend premium taste with affordable luxury.
-A cozy rooftop ambience, cinematic lighting, and flavors crafted with love —
-perfect for couples, families, and creators.
-</p>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-<h2>What People Say</h2>
-<div class="testimonial-card">
-⭐⭐⭐⭐⭐ <br>
-“Best rooftop cafe in Kota! Amazing vibes & food.”
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-<h2>Visit Us</h2>
-<p>
-5th Floor, Above Hulk Gym, Gomati Arcade,<br>
-Mahaveer Nagar, Nayapura, Kota, Rajasthan – 324002
-</p>
-<iframe src="https://maps.google.com/maps?q=Gomati%20Arcade%20Kota&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
-<p class="hours">Open — Closes at 10 PM</p>
-</section>
-
-<!-- FOOTER -->
 <footer>
-<p>© 2026 Chahat Cafe & Restaurant</p>
-<div class="socials">
-  <a href="#">Instagram</a>
-  <a href="#">WhatsApp</a>
-  <a href="#">Maps</a>
-</div>
+    © 2026 NextReach Digital | Reach More. Grow Faster.
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
