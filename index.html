@@ -8,317 +8,196 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#fff;color:#1a1a1a}
+
+    header{
+      display:flex;align-items:center;
+      padding:14px 20px;border-bottom:1px solid #eee
+    }
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand img{height:46px}
+    .brand h1{font-size:20px;color:#0b2c4a;font-weight:700}
+
+    .hero{
+      text-align:center;padding:90px 20px;
+      background:linear-gradient(180deg,#f4f9ff,#fff)
+    }
+    .hero h2{font-size:38px;color:#0b2c4a}
+    .hero p{max-width:650px;margin:18px auto 25px}
+    .btn{
+      padding:14px 34px;background:#0b2c4a;
+      color:#fff;text-decoration:none;border-radius:30px
     }
 
-    body {
-      background: #ffffff;
-      color: #1a1a1a;
-      line-height: 1.6;
-    }
+    section{padding:70px 20px}
+    .section-title{text-align:center;margin-bottom:45px}
+    .section-title h3{font-size:30px;color:#0b2c4a}
 
-    /* HEADER */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 20px;
-      border-bottom: 1px solid #eee;
-      background: #fff;
+    /* SERVICES */
+    .services{
+      display:grid;gap:28px;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      max-width:1100px;margin:auto
     }
+    .service-box{
+      padding:32px;border-radius:18px;
+      border:1px solid #eef2f7;
+      position:relative;transition:.3s
+    }
+    .service-box::before{
+      content:"";height:4px;width:100%;
+      background:linear-gradient(90deg,#0b2c4a,#5db7e5);
+      position:absolute;top:0;left:0
+    }
+    .service-box:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(11,44,74,.12)}
+    .service-icon{font-size:30px;margin-bottom:12px}
+    .service-box h4{color:#0b2c4a}
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    /* PRICING */
+    .pricing{
+      display:grid;gap:25px;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      max-width:1000px;margin:auto
     }
+    .price-card{
+      border-radius:20px;
+      border:1px solid #e6ecf3;
+      padding:35px;text-align:center
+    }
+    .price-card h4{color:#0b2c4a;font-size:22px}
+    .price{font-size:32px;margin:15px 0;font-weight:700}
+    .price-card ul{list-style:none;margin:20px 0}
+    .price-card li{margin:8px 0;color:#555}
+    .price-card a{display:inline-block;margin-top:15px}
+    .featured{background:#f4f9ff;transform:scale(1.03)}
 
-    .brand img {
-      height: 46px;
-      width: auto;
+    /* TESTIMONIALS */
+    .testimonials{
+      display:grid;gap:25px;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      max-width:1000px;margin:auto
     }
-
-    .brand h1 {
-      font-size: 20px;
-      color: #0b2c4a;
-      font-weight: 700;
+    .testimonial{
+      background:#fff;border-radius:18px;
+      padding:30px;border:1px solid #eef2f7
     }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
-
-    /* HERO */
-    .hero {
-      padding: 90px 20px;
-      text-align: center;
-      background: linear-gradient(180deg, #f4f9ff, #ffffff);
-    }
-
-    .hero h2 {
-      font-size: 38px;
-      color: #0b2c4a;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      max-width: 650px;
-      margin: 0 auto 25px;
-      font-size: 17px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 34px;
-      background: #0b2c4a;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: 500;
-    }
-
-    /* SECTION */
-    section {
-      padding: 70px 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 45px;
-    }
-
-    .section-title h3 {
-      font-size: 30px;
-      color: #0b2c4a;
-    }
-
-    /* SERVICES GRID */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 28px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    /* PREMIUM SERVICE CARDS */
-    .service-box {
-      position: relative;
-      padding: 32px 26px;
-      border-radius: 18px;
-      background: #ffffff;
-      border: 1px solid #eef2f7;
-      transition: all 0.35s ease;
-      overflow: hidden;
-    }
-
-    .service-box::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(90deg, #0b2c4a, #5db7e5);
-    }
-
-    .service-icon {
-      font-size: 30px;
-      margin-bottom: 14px;
-    }
-
-    .service-box h4 {
-      font-size: 18px;
-      color: #0b2c4a;
-      margin-bottom: 8px;
-    }
-
-    .service-box p {
-      font-size: 15px;
-      color: #555;
-    }
-
-    .service-box:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 18px 40px rgba(11, 44, 74, 0.12);
-    }
-
-    /* WHY US */
-    .why-us {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .why-box {
-      background: #f5f9ff;
-      padding: 22px;
-      border-radius: 14px;
-      font-weight: 500;
-    }
-
-    /* STEPS */
-    .steps {
-      text-align: center;
-    }
-
-    .steps p {
-      font-size: 17px;
-      margin: 10px 0;
-    }
+    .testimonial p{font-size:15px;color:#444}
+    .client{margin-top:15px;font-weight:600;color:#0b2c4a}
 
     /* CONTACT */
-    .contact {
-      background: #0b2c4a;
-      color: white;
-      text-align: center;
-      padding: 70px 20px;
+    .contact{
+      background:#0b2c4a;color:#fff;
+      text-align:center;padding:70px 20px
     }
 
-    .contact h3 {
-      font-size: 26px;
-      margin-bottom: 15px;
+    footer{
+      background:#081f35;color:#ccc;
+      text-align:center;padding:14px;font-size:14px
     }
 
-    footer {
-      text-align: center;
-      padding: 14px;
-      background: #081f35;
-      color: #ccc;
-      font-size: 14px;
+    /* WHATSAPP */
+    .whatsapp-btn{
+      position:fixed;bottom:80px;right:20px;
+      width:55px;height:55px;background:#25D366;
+      border-radius:50%;display:flex;
+      align-items:center;justify-content:center;
+      box-shadow:0 6px 15px rgba(0,0,0,.25)
     }
+    .whatsapp-btn img{width:28px}
 
-    /* WHATSAPP BUTTON */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 80px;
-      right: 20px;
-      width: 55px;
-      height: 55px;
-      background: #25D366;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-      z-index: 999;
-      text-decoration: none;
-    }
-
-    .whatsapp-btn img {
-      width: 28px;
-      height: 28px;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        display: none;
-      }
-
-      .hero h2 {
-        font-size: 30px;
-      }
-    }
   </style>
 </head>
 <body>
 
 <header>
   <div class="brand">
-    <img src="https://i.ibb.co/gF7wFVfc/file-000000000cc871faa6a7260c81b1234e.png" alt="NextReach Digital Logo">
+    <img src="https://i.ibb.co/gF7wFVfc/file-000000000cc871faa6a7260c81b1234e.png">
     <h1>NextReach Digital</h1>
   </div>
 </header>
 
 <div class="hero">
   <h2>Reach More. Grow Faster.</h2>
-  <p>
-    We help local businesses get more calls, visits,
-    and real customers using Google and digital platforms.
-  </p>
+  <p>We help local businesses get more calls, visits and customers using Google & digital platforms.</p>
   <a href="https://wa.me/916367317712" class="btn">Get Free Visibility Audit</a>
 </div>
 
 <section>
-  <div class="section-title">
-    <h3>Our Services</h3>
-  </div>
-
+  <div class="section-title"><h3>Our Services</h3></div>
   <div class="services">
-    <div class="service-box">
-      <div class="service-icon">📍</div>
-      <h4>Google Business Profile</h4>
-      <p>Get found on Google Maps and “near me” searches.</p>
+    <div class="service-box"><div class="service-icon">📍</div><h4>Google Business Profile</h4><p>Get found on Google Maps & near-me searches.</p></div>
+    <div class="service-box"><div class="service-icon">🌐</div><h4>Business Website</h4><p>Professional mobile-friendly website.</p></div>
+    <div class="service-box"><div class="service-icon">💬</div><h4>WhatsApp Business Setup</h4><p>Auto replies & catalog setup.</p></div>
+    <div class="service-box"><div class="service-icon">📱</div><h4>Instagram Presence</h4><p>Simple posts to build trust.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title"><h3>Pricing</h3></div>
+  <div class="pricing">
+    <div class="price-card">
+      <h4>Starter</h4>
+      <div class="price">₹3,999</div>
+      <ul>
+        <li>Google Business Setup</li>
+        <li>1-Page Website</li>
+        <li>WhatsApp Setup</li>
+      </ul>
+      <a href="https://wa.me/916367317712" class="btn">Get Started</a>
     </div>
 
-    <div class="service-box">
-      <div class="service-icon">🌐</div>
-      <h4>Business Website</h4>
-      <p>Professional, mobile-friendly website for trust.</p>
+    <div class="price-card featured">
+      <h4>Growth</h4>
+      <div class="price">₹1,499/mo</div>
+      <ul>
+        <li>Monthly Support</li>
+        <li>Instagram Posts</li>
+        <li>Profile Management</li>
+      </ul>
+      <a href="https://wa.me/916367317712" class="btn">Most Popular</a>
     </div>
 
-    <div class="service-box">
-      <div class="service-icon">💬</div>
-      <h4>WhatsApp Business Setup</h4>
-      <p>Auto replies and quick customer communication.</p>
-    </div>
-
-    <div class="service-box">
-      <div class="service-icon">📱</div>
-      <h4>Basic Instagram Presence</h4>
-      <p>Simple posts to build local trust.</p>
+    <div class="price-card">
+      <h4>Custom</h4>
+      <div class="price">Contact Us</div>
+      <ul>
+        <li>Custom Marketing Plan</li>
+        <li>Business Automation</li>
+      </ul>
+      <a href="https://wa.me/916367317712" class="btn">Talk to Us</a>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="section-title">
-    <h3>Why Choose NextReach Digital</h3>
+  <div class="section-title"><h3>What Clients Say</h3></div>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>“NextReach Digital helped my shop appear on Google Maps and calls increased within a week.”</p>
+      <div class="client">— Local Shop Owner</div>
+    </div>
+    <div class="testimonial">
+      <p>“Very professional service, affordable and fast delivery.”</p>
+      <div class="client">— Coaching Center</div>
+    </div>
+    <div class="testimonial">
+      <p>“Best digital support for small businesses.”</p>
+      <div class="client">— Gym Owner</div>
+    </div>
   </div>
-
-  <div class="why-us">
-    <div class="why-box">Local Business Focused</div>
-    <div class="why-box">Affordable Pricing</div>
-    <div class="why-box">Fast Setup (3–5 Days)</div>
-    <div class="why-box">No Long-Term Contracts</div>
-  </div>
-</section>
-
-<section class="steps">
-  <div class="section-title">
-    <h3>How It Works</h3>
-  </div>
-  <p>1️⃣ Free Visibility Audit</p>
-  <p>2️⃣ Setup & Optimization</p>
-  <p>3️⃣ Customers Start Calling</p>
 </section>
 
 <div class="contact">
   <h3>Let’s Grow Your Business</h3>
   <p>📞 +91 63673 17712</p>
   <p>📧 sanketsharma.web@gmail.com</p>
-  <p>📍 Serving Your City & Nearby Areas</p>
 </div>
 
-<footer>
-  © 2026 NextReach Digital | Reach More. Grow Faster.
-</footer>
+<footer>© 2026 NextReach Digital</footer>
 
-<a
-  href="https://wa.me/916367317712?text=Hello%20NextReach%20Digital,%20I%20want%20a%20free%20visibility%20audit."
-  class="whatsapp-btn"
-  target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+<a href="https://wa.me/916367317712" class="whatsapp-btn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
 
 </body>
