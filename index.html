@@ -1,303 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextReach Digital | Reach More. Grow Faster.</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NextReach Digital | Reach More. Grow Faster.</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-        body {
-            background: #ffffff;
-            color: #1a1a1a;
-            line-height: 1.6;
-        }
+    body {
+      background: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
 
-        /* HEADER */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 60px;
-            border-bottom: 1px solid #eee;
-        }
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+    }
 
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-        .brand img {
-            height: 45px;
-        }
+    .brand img {
+      height: 36px;
+      width: auto;
+    }
 
-        .brand h1 {
-            font-size: 22px;
-            color: #0b2c4a;
-            font-weight: 700;
-        }
+    .brand h1 {
+      font-size: 20px;
+      color: #0b2c4a;
+      font-weight: 700;
+    }
 
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
 
-        /* HERO */
-        .hero {
-            padding: 90px 20px;
-            text-align: center;
-            background: linear-gradient(180deg, #f4f9ff, #ffffff);
-        }
+    /* HERO */
+    .hero {
+      padding: 90px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, #f4f9ff, #ffffff);
+    }
 
-        .hero h2 {
-            font-size: 42px;
-            color: #0b2c4a;
-            margin-bottom: 15px;
-        }
+    .hero h2 {
+      font-size: 38px;
+      color: #0b2c4a;
+      margin-bottom: 15px;
+    }
 
-        .hero p {
-            max-width: 650px;
-            margin: 0 auto 25px;
-            font-size: 18px;
-        }
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      font-size: 17px;
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 14px 34px;
-            background: #0b2c4a;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 500;
-        }
+    .btn {
+      display: inline-block;
+      padding: 14px 34px;
+      background: #0b2c4a;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 500;
+    }
 
-        /* SECTIONS */
-        section {
-            padding: 70px 60px;
-        }
+    /* SECTIONS */
+    section {
+      padding: 70px 20px;
+    }
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-        .section-title h3 {
-            font-size: 32px;
-            color: #0b2c4a;
-        }
+    .section-title h3 {
+      font-size: 30px;
+      color: #0b2c4a;
+    }
 
-        /* SERVICES */
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-        .service-box {
-            padding: 28px;
-            border: 1px solid #eee;
-            border-radius: 14px;
-            transition: 0.3s;
-        }
+    .service-box {
+      padding: 26px;
+      border: 1px solid #eee;
+      border-radius: 14px;
+      transition: 0.3s;
+      background: #fff;
+    }
 
-        .service-box:hover {
-            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-        }
+    .service-box:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
 
-        .service-box h4 {
-            color: #0b2c4a;
-            margin-bottom: 10px;
-        }
+    .service-box h4 {
+      color: #0b2c4a;
+      margin-bottom: 8px;
+    }
 
-        /* WHY US */
-        .why-us {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            text-align: center;
-        }
+    /* WHY US */
+    .why-us {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
 
-        .why-box {
-            background: #f5f9ff;
-            padding: 22px;
-            border-radius: 12px;
-            font-weight: 500;
-        }
+    .why-box {
+      background: #f5f9ff;
+      padding: 22px;
+      border-radius: 12px;
+      font-weight: 500;
+    }
 
-        /* STEPS */
-        .steps {
-            text-align: center;
-        }
+    /* STEPS */
+    .steps {
+      text-align: center;
+    }
 
-        .steps p {
-            font-size: 18px;
-            margin: 12px 0;
-        }
+    .steps p {
+      font-size: 17px;
+      margin: 10px 0;
+    }
 
-        /* CONTACT */
-        .contact {
-            background: #0b2c4a;
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
+    /* CONTACT */
+    .contact {
+      background: #0b2c4a;
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
 
-        .contact h3 {
-            margin-bottom: 15px;
-            font-size: 28px;
-        }
+    .contact h3 {
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 14px;
-            background: #081f35;
-            color: #ccc;
-            font-size: 14px;
-        }
+    footer {
+      text-align: center;
+      padding: 14px;
+      background: #081f35;
+      color: #ccc;
+      font-size: 14px;
+    }
 
-        /* WHATSAPP BUTTON */
-        .whatsapp-btn {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background-color: #25D366;
-            color: white;
-            padding: 14px 18px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            z-index: 1000;
-        }
+    /* WHATSAPP ICON BUTTON */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 55px;
+      height: 55px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+      z-index: 999;
+      text-decoration: none;
+    }
 
-        .whatsapp-btn:hover {
-            background-color: #1ebe5d;
-        }
+    .whatsapp-btn img {
+      width: 28px;
+      height: 28px;
+    }
 
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-            }
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
 
-            nav {
-                margin-top: 10px;
-            }
-
-            .hero h2 {
-                font-size: 32px;
-            }
-        }
-    </style>
+      .hero h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <div class="brand">
-        <img src="https://i.ibb.co/3yF61z6g/file-00000000b2dc71faa2ba14a172dc87b8.png" alt="NextReach Digital Logo">
-        <h1>NextReach Digital</h1>
-    </div>
+  <div class="brand">
+    <img src="https://i.ibb.co/3yF61z6g/file-00000000b2dc71faa2ba14a172dc87b8.png" alt="NextReach Digital Logo">
+    <h1>NextReach Digital</h1>
+  </div>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
 </header>
 
 <div class="hero">
-    <h2>Reach More. Grow Faster.</h2>
-    <p>
-        We help local businesses get more calls, visits,
-        and real customers using Google and digital platforms.
-    </p>
-    <a href="https://wa.me/91XXXXXXXXXX" class="btn">Get Free Visibility Audit</a>
+  <h2>Reach More. Grow Faster.</h2>
+  <p>
+    We help local businesses get more calls, visits,
+    and real customers using Google and digital platforms.
+  </p>
+  <a href="https://wa.me/91XXXXXXXXXX" class="btn">Get Free Visibility Audit</a>
 </div>
 
 <section>
-    <div class="section-title">
-        <h3>Our Services</h3>
+  <div class="section-title">
+    <h3>Our Services</h3>
+  </div>
+
+  <div class="services">
+    <div class="service-box">
+      <h4>Google Business Profile</h4>
+      <p>Get found on Google Maps and “near me” searches.</p>
     </div>
 
-    <div class="services">
-        <div class="service-box">
-            <h4>Google Business Profile</h4>
-            <p>Get found on Google Maps and “near me” searches to increase calls and visits.</p>
-        </div>
-
-        <div class="service-box">
-            <h4>Business Website</h4>
-            <p>Clean, mobile-friendly website that builds trust and credibility.</p>
-        </div>
-
-        <div class="service-box">
-            <h4>WhatsApp Business Setup</h4>
-            <p>Auto replies, catalog and quick customer communication.</p>
-        </div>
-
-        <div class="service-box">
-            <h4>Basic Instagram Presence</h4>
-            <p>Professional profile and simple posts to build local trust.</p>
-        </div>
+    <div class="service-box">
+      <h4>Business Website</h4>
+      <p>Professional, mobile-friendly website for trust.</p>
     </div>
+
+    <div class="service-box">
+      <h4>WhatsApp Business Setup</h4>
+      <p>Auto replies and quick customer communication.</p>
+    </div>
+
+    <div class="service-box">
+      <h4>Basic Instagram Presence</h4>
+      <p>Simple posts to build local trust.</p>
+    </div>
+  </div>
 </section>
 
 <section>
-    <div class="section-title">
-        <h3>Why Choose NextReach Digital</h3>
-    </div>
+  <div class="section-title">
+    <h3>Why Choose NextReach Digital</h3>
+  </div>
 
-    <div class="why-us">
-        <div class="why-box">Local Business Focused</div>
-        <div class="why-box">Affordable Pricing</div>
-        <div class="why-box">Fast Setup (3–5 Days)</div>
-        <div class="why-box">No Long-Term Contracts</div>
-    </div>
+  <div class="why-us">
+    <div class="why-box">Local Business Focused</div>
+    <div class="why-box">Affordable Pricing</div>
+    <div class="why-box">Fast Setup (3–5 Days)</div>
+    <div class="why-box">No Long-Term Contracts</div>
+  </div>
 </section>
 
 <section class="steps">
-    <div class="section-title">
-        <h3>How It Works</h3>
-    </div>
-    <p>1️⃣ Free Visibility Audit</p>
-    <p>2️⃣ Setup & Optimization</p>
-    <p>3️⃣ Customers Start Calling</p>
+  <div class="section-title">
+    <h3>How It Works</h3>
+  </div>
+  <p>1️⃣ Free Visibility Audit</p>
+  <p>2️⃣ Setup & Optimization</p>
+  <p>3️⃣ Customers Start Calling</p>
 </section>
 
 <div class="contact">
-    <h3>Let’s Grow Your Business</h3>
-    <p>📞 +91-6367317712</p>
-    <p>📧 sanketsharma.web@gmail.com</p>
-    <p>📍 Serving Your City & Nearby Areas</p>
+  <h3>Let’s Grow Your Business</h3>
+  <p>📞 +91-6367317712</p>
+  <p>📧 sanketsharma.web@gmail.com</p>
+  <p>📍 Serving Your City & Nearby Areas</p>
 </div>
 
 <footer>
-    © 2026 NextReach Digital | Reach More. Grow Faster.
+  © 2026 NextReach Digital | Reach More. Grow Faster.
 </footer>
 
-<!-- WHATSAPP FLOATING BUTTON -->
+<!-- WHATSAPP FLOATING ICON -->
 <a
   href="https://wa.me/916367317712?text=Hello%20NextReach%20Digital,%20I%20want%20a%20free%20visibility%20audit."
   class="whatsapp-btn"
-  target="_blank"
->
-  💬 Chat on WhatsApp
+  target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
 
 </body>
