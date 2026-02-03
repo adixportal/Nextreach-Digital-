@@ -12,19 +12,13 @@
 body{background:#fff;color:#1a1a1a}
 
 /* HEADER */
-header{
-  display:flex;align-items:center;
-  padding:14px 20px;border-bottom:1px solid #eee
-}
+header{display:flex;align-items:center;padding:14px 20px;border-bottom:1px solid #eee}
 .brand{display:flex;align-items:center;gap:10px}
 .brand img{height:46px}
 .brand h1{font-size:20px;color:#0b2c4a;font-weight:700}
 
 /* HERO */
-.hero{
-  text-align:center;padding:90px 20px;
-  background:linear-gradient(180deg,#f4f9ff,#fff)
-}
+.hero{text-align:center;padding:90px 20px;background:linear-gradient(180deg,#f4f9ff,#fff)}
 .hero h2{font-size:38px;color:#0b2c4a}
 .hero p{max-width:650px;margin:18px auto 25px}
 .btn{
@@ -46,97 +40,53 @@ section{padding:80px 20px}
 }
 .service-box{
   padding:32px;border-radius:18px;
-  border:1px solid #eef2f7;
-  position:relative;transition:.35s;
-  background:#fff
+  border:1px solid #eef2f7;position:relative;transition:.35s
 }
 .service-box::before{
   content:"";height:4px;width:100%;
   background:linear-gradient(90deg,#0b2c4a,#5db7e5);
   position:absolute;top:0;left:0
 }
-.service-box:hover{
-  transform:translateY(-8px);
-  box-shadow:0 18px 40px rgba(11,44,74,.12)
-}
+.service-box:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(11,44,74,.12)}
 .service-icon{font-size:30px;margin-bottom:12px}
 .service-box h4{color:#0b2c4a}
 
-/* 🔥 PREMIUM PRICING */
+/* PRICING */
 .pricing{
   display:grid;gap:30px;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   max-width:1100px;margin:auto
 }
-
 .price-card{
-  background:rgba(255,255,255,0.9);
-  backdrop-filter:blur(8px);
+  background:rgba(255,255,255,0.95);
   border-radius:22px;
-  padding:40px 30px;
-  text-align:center;
+  padding:40px 30px;text-align:center;
   border:1px solid #e7eef6;
-  transition:0.4s;
-  position:relative
+  transition:.4s;position:relative
 }
-
 .price-card:hover{
   transform:translateY(-12px) scale(1.02);
   box-shadow:0 25px 60px rgba(11,44,74,0.18)
 }
+.price-card h4{font-size:22px;color:#0b2c4a}
+.price{font-size:38px;font-weight:700;color:#0b2c4a;margin:15px 0}
+.price span{font-size:16px;font-weight:400}
 
-.price-card h4{
-  font-size:22px;
-  color:#0b2c4a;
-  margin-bottom:10px
-}
+.price-card ul{list-style:none;margin:25px 0}
+.price-card li{margin:10px 0;color:#444}
 
-.price{
-  font-size:38px;
-  font-weight:700;
-  color:#0b2c4a;
-  margin:15px 0
-}
-
-.price span{
-  font-size:16px;
-  color:#555;
-  font-weight:400
-}
-
-.price-card ul{
-  list-style:none;
-  margin:25px 0
-}
-.price-card li{
-  margin:10px 0;
-  color:#444;
-  font-size:15px
-}
-
-/* MOST POPULAR */
 .featured{
   background:linear-gradient(180deg,#0b2c4a,#123a63);
-  color:#fff;
-  transform:scale(1.05)
+  color:#fff;transform:scale(1.05)
 }
-.featured h4,
-.featured .price,
-.featured li{color:#fff}
-.featured .btn{
-  background:#fff;
-  color:#0b2c4a
-}
+.featured h4,.featured .price,.featured li{color:#fff}
+.featured .btn{background:#fff;color:#0b2c4a}
 .badge{
-  position:absolute;
-  top:-14px;left:50%;
+  position:absolute;top:-14px;left:50%;
   transform:translateX(-50%);
-  background:#ffcc00;
-  color:#000;
-  padding:6px 16px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:600
+  background:#ffcc00;color:#000;
+  padding:6px 16px;border-radius:30px;
+  font-size:13px;font-weight:600
 }
 
 /* TESTIMONIALS */
@@ -153,22 +103,15 @@ section{padding:80px 20px}
 .client{margin-top:14px;font-weight:600;color:#0b2c4a}
 
 /* CONTACT */
-.contact{
-  background:#0b2c4a;color:#fff;
-  text-align:center;padding:70px 20px
-}
-footer{
-  background:#081f35;color:#ccc;
-  text-align:center;padding:14px;font-size:14px
-}
+.contact{background:#0b2c4a;color:#fff;text-align:center;padding:70px 20px}
+footer{background:#081f35;color:#ccc;text-align:center;padding:14px;font-size:14px}
 
 /* WHATSAPP */
 .whatsapp-btn{
   position:fixed;bottom:80px;right:20px;
   width:55px;height:55px;background:#25D366;
-  border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 6px 15px rgba(0,0,0,.25)
+  border-radius:50%;display:flex;align-items:center;
+  justify-content:center;box-shadow:0 6px 15px rgba(0,0,0,.25)
 }
 .whatsapp-btn img{width:28px}
 </style>
@@ -185,13 +128,17 @@ footer{
 <div class="hero">
   <h2>Reach More. Grow Faster.</h2>
   <p>We help local businesses get more calls, visits and customers using Google & digital platforms.</p>
-  <a href="https://wa.me/916367317712" class="btn">Get Free Visibility Audit</a>
+  <a href="https://wa.me/916367317712?text=Hello%20NextReach%20Digital,%20I%20want%20a%20free%20visibility%20audit." class="btn">
+    Get Free Visibility Audit
+  </a>
 </div>
 
+<!-- PRICING -->
 <section>
   <div class="section-title"><h3>Pricing</h3></div>
   <div class="pricing">
 
+    <!-- STARTER -->
     <div class="price-card">
       <h4>Starter</h4>
       <div class="price">₹3,999</div>
@@ -200,9 +147,12 @@ footer{
         <li>1-Page Website</li>
         <li>WhatsApp Business Setup</li>
       </ul>
-      <a href="https://wa.me/916367317712" class="btn">Get Started</a>
+      <a href="https://wa.me/916367317712?text=Hello%20NextReach%20Digital,%20I%20am%20interested%20in%20the%20STARTER%20PLAN%20(%E2%82%B93,999)." class="btn">
+        Choose Starter
+      </a>
     </div>
 
+    <!-- GROWTH -->
     <div class="price-card featured">
       <div class="badge">MOST POPULAR</div>
       <h4>Growth</h4>
@@ -212,9 +162,12 @@ footer{
         <li>Instagram Posts</li>
         <li>Profile Management</li>
       </ul>
-      <a href="https://wa.me/916367317712" class="btn">Choose Plan</a>
+      <a href="https://wa.me/916367317712?text=Hello%20NextReach%20Digital,%20I%20am%20interested%20in%20the%20GROWTH%20PLAN%20(%E2%82%B91,499/month)." class="btn">
+        Choose Growth
+      </a>
     </div>
 
+    <!-- CUSTOM -->
     <div class="price-card">
       <h4>Custom</h4>
       <div class="price">Custom</div>
@@ -222,12 +175,15 @@ footer{
         <li>Custom Strategy</li>
         <li>Automation & Ads</li>
       </ul>
-      <a href="https://wa.me/916367317712" class="btn">Talk to Us</a>
+      <a href="https://wa.me/916367317712?text=Hello%20NextReach%20Digital,%20I%20need%20a%20CUSTOM%20PLAN%20for%20my%20business." class="btn">
+        Talk to Us
+      </a>
     </div>
 
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
 <section>
   <div class="section-title"><h3>What Clients Say</h3></div>
   <div class="testimonials">
@@ -238,10 +194,6 @@ footer{
     <div class="testimonial">
       <p>“Very professional and affordable service.”</p>
       <div class="client">— Coaching Center</div>
-    </div>
-    <div class="testimonial">
-      <p>“Best digital support for small businesses.”</p>
-      <div class="client">— Gym Owner</div>
     </div>
   </div>
 </section>
@@ -254,7 +206,9 @@ footer{
 
 <footer>© 2026 NextReach Digital</footer>
 
-<a href="https://wa.me/916367317712" class="whatsapp-btn">
+<!-- GENERIC WHATSAPP -->
+<a href="https://wa.me/916367317712?text=Hello%20NextReach%20Digital,%20I%20want%20to%20know%20more%20about%20your%20services."
+   class="whatsapp-btn">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
 
